@@ -1,0 +1,348 @@
+ /* common css start */
+:root {
+    --font-family: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+        --text-color: #11161e;
+        --3d-primary-color: #151a32;
+        --comon-colot: #fff;
+        --1st-primary-color: #ff6f61;
+        --paragraph-color: #444;
+        --2nd-primary-color: #ff5645;
+        --background-color: #f1f1f1;
+        --bg: #f1f3f4;
+        --black: #000;
+        --a6aab7: #a6aab7;
+    
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    font-family: var(--font-family)
+}
+/* common css end */
+
+/* navbar start */
+
+#navLg ul li a{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: var(--text-color);
+padding: 37px 22px;
+}
+#navLg ul li a.active-link,
+
+#navLg ul li a:hover{
+    color: var(--1st-primary-color);
+}
+
+.socialLink ul li{
+    display: inline-block;
+
+}
+nav .socialLink ul li a{
+    color: var(--3d-primary-color);
+    padding: 0 10px;
+    font-size: 17px;
+    position: relative;
+}
+nav .socialLink ul li a span.cardCount{
+    position: absolute;
+    top: -6px;
+    right: 1px;
+    background-color: var(--1st-primary-color);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 18px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--comon-colot);
+
+}
+.navbarSm .socialLink ul{
+    text-align: center;
+}
+.navbarSm .socialLink ul li a{
+    padding: 0 5px;
+}
+
+.navbarSm .socialLink ul li a span.cardCount{
+    right: -4px;
+
+}
+
+.navbarSm .menu a{
+    color: var(--3d-primary-color);
+}
+.navbarSm .logo{
+    text-align: center;
+    padding: 15px 0;
+}
+.navbarSm .logo img{
+    width: 50%;
+    min-width: 100%;
+}
+.navbarSm{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#offcanvasSmall ul li a{
+ font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: var(--1st-primary-color);
+
+}
+#offcanvasSmall ul{
+    text-align: left;
+    
+}
+#offcanvasSmall ul li a{
+    color: var(--3d-primary-color);
+}
+
+/* navbar end */
+
+/* banner start */
+#banner{
+    position: relative;
+}
+#banner .bannerSlide{
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+#banner .bannerSlide h5{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: #1d1d1d;
+}
+#banner .bannerSlide h2{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 64px;
+line-height: 116%;
+color: #1d1d1d;
+margin: 14px 0 16px 0;
+}
+
+#banner .bannerSlide p{
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: #1d1d1d; 
+margin-bottom: 30px;
+}
+#banner .bannerSlide a{
+ font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 167%;
+text-align: center;
+color: var(--comon-colot);
+background: var(--1st-primary-color);
+padding: 13px 37px;
+}
+
+.bannerDots  li{
+    display: inline-block;
+    
+}
+.bannerDots{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.bannerDots li button{
+    width: 10.91px;
+    height: 6px;
+    border-radius: 5px;
+    border: none;
+    color: transparent;
+    margin-right: 4.56px;
+    transition: .33s ease;
+}
+
+.bannerDots li.slick-active button{
+    width: 28.36px;
+    background-color: var(--1st-primary-color);
+}
+/* banner start end */
+
+#catagory{
+   margin: 22px 40px 22px 40px;
+}
+
+/* new arrival section start */
+
+#newArrival h2{
+  
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+line-height: 128%;
+text-align: center;
+color: var(--text-color);
+}
+
+#newArrival{
+    padding: 36px 0 88px 0;
+    display: block;
+    position: relative;
+
+}
+
+.leftArrows,
+.rightArrows{
+    background-color: rgb(20, 25, 51, 0.5);
+    color: #fff;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+.leftArrows{
+    left: 23;
+}
+.rightArrows{
+    right: 23;
+}
+
+
+
+.productSlide{
+    padding: 0 12px;
+}
+
+.productSlide .productImage img{
+    width: 100%;
+    display: block;
+}
+.productSlide .productImage .label{
+    position: absolute;
+    top: 9px;
+    border-radius: 13px 0 0 13px;
+    left: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--comon-colot);
+    transform: rotate(-90deg);
+    padding: 0 9px;
+    background-color: var(--1st-primary-color);
+
+}
+.productSlide .productImage{
+    position: relative;
+}
+
+.productSlide .productImage .overlay{
+    position: absolute;
+    right: 20px;
+    top: 44px;
+}
+
+.productSlide .productImage .overlay ul li a{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: block;
+    background-color: #fff;
+    color: var(--3d-primary-color);
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.2s ease;
+    
+}
+.productSlide .productImage .overlay ul li{
+    transform: translateX(-80px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.productSlide .productImage:hover .overlay ul li{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.productSlide .productImage:hover .overlay ul li:nth-child(2){
+    transition-delay: 0.14s;
+}
+.productSlide .productImage:hover .overlay ul li:nth-child(3){
+    transition-delay: 0.35s;
+}
+.productSlide .productImage:hover .overlay ul li:nth-child(4){
+    transition-delay: 0.45s;
+}
+
+
+.productSlide .productImage .overlay ul li a:hover{
+    background-color: var(--1st-primary-color);
+    color: #fff;
+}
+
+
+.productSlide .productText{
+    padding: 24px 0 26px 0;
+    text-align: center;
+
+}
+.productSlide .productText a{
+    padding: 5px 0 11px 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.productSlide .productText span{
+    color: var(--1st-primary-color);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* new arrival section end */
